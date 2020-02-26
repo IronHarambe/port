@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  background-color: #0b0c10;
+  color: whitesmoke;
+}
+
+/* Layout */
+
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+/* Navigation Bar */
+.title {
+  margin-right: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: gold;
+  border-bottom: 2px solid gold;
+}
+
+/* Git Hub button */
+header i {
+  margin-left: 2em;
+}
+
+/* Main Section */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  text-align: center;
+  width: 100%;
+}
+
+section h1 {
+  font-size: 100px;
+  color: #faed26;
+  opacity: 0;
+  animation: fadeup 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+section p {
+  padding: 20rem;
+  margin: 20px 10%;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 2em 0.5em;
+  opacity: 0;
+  animation: fadeup 0.6s forwards;
+  animation-delay: 0.7s;
+}
+
+section a {
+  margin-bottom: 15px;
+  padding: 1.5rem;
+  text-decoration: none;
+  background: rgb(219, 132, 1);
+  color: black;
+  font-family: "Montserrat";
+  text-align: center;
+  opacity: 0;
+  animation: fadeup 0.5s forwards;
+  animation-delay: 0.9s;
+}
+
+section a:hover {
+  background-color: #e2b13c;
+}
+
+@media only screen and (max-width: 890px) {
+  .title {
+    margin: 0;
+  }
+
+  section {
+    margin-top: 3rem;
+  }
+
+  section h1 {
+    font-size: 40px;
+  }
+
+  section p {
+    margin-top: 0.5em;
+    font-size: 16px;
+    padding: 0.9rem;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+  }
+
+  header i {
+    margin-top: 0.8em;
+    margin-left: 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeup {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
